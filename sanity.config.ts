@@ -9,7 +9,10 @@ export default defineConfig({
 
   projectId: '8nutc7ib',
   dataset: 'production',
-
+  server: {
+    hostname: "localhost",
+    port: 3333,
+  },
   plugins: [deskTool(), visionTool()],
 
   schema: {
