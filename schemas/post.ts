@@ -45,6 +45,12 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
+      name: 'subcategories',
+      title: 'Sub Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'subcategory'}}],
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
