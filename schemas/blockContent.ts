@@ -53,5 +53,11 @@ export default defineType({
       type: 'image',
       options: {hotspot: true},
     }),
+    defineArrayMember({
+      type: 'youtube',
+    }),
+    defineArrayMember({
+      type: 'twitter',
+    }),
   ],
 })
