@@ -1,6 +1,7 @@
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {structureTool} from "sanity/structure"
 import {visionTool} from '@sanity/vision'
+import { table } from '@sanity/table';
 import {schemaTypes} from './schemas'
 
 export default defineConfig({
@@ -13,7 +14,7 @@ export default defineConfig({
     hostname: "localhost",
     port: 3333,
   },
-  plugins: [deskTool(), visionTool()],
+  plugins: [structureTool(), visionTool(), table()],
 
   schema: {
     types: schemaTypes,

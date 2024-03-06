@@ -59,5 +59,8 @@ export default defineType({
     defineArrayMember({
       type: 'twitter',
     }),
+    defineArrayMember({
+      type: 'table',
+    }),
   ],
 })
