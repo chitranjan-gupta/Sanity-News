@@ -60,6 +60,9 @@ export default defineType({
       type: 'twitter',
     }),
     defineArrayMember({
+      type: 'instagram',
+    }),
+    defineArrayMember({
       type: 'table',
     }),
   ],
