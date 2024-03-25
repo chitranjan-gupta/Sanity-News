@@ -9,8 +9,8 @@ export default defineConfig({
   name: 'default',
   title: 'News',
 
-  projectId: '8nutc7ib',
-  dataset: 'production',
+  projectId: String(process.env.SANITY_STUDIO_PROJECT_ID),
+  dataset: String(process.env.SANITY_STUDIO_DATASET),
   server: {
     hostname: 'localhost',
     port: 3333,
