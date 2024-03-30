@@ -83,5 +83,14 @@ export default defineType({
     defineArrayMember({
       type: 'table',
     }),
+    defineArrayMember({
+      type: 'youtubeembed',
+    }),
+    defineArrayMember({
+      type: 'instagramembed',
+    }),
+    defineArrayMember({
+      type: 'twitterembed',
+    }),
   ],
 })

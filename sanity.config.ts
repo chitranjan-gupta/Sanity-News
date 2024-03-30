@@ -3,6 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {table} from '@sanity/table'
 import {media} from 'sanity-plugin-media'
+import {socialMedia} from 'sanity-plugin-social-embed'
 import {schemaTypes} from './schemas'
 
 export default defineConfig({
@@ -15,7 +16,7 @@ export default defineConfig({
     hostname: 'localhost',
     port: 3333,
   },
-  plugins: [structureTool(), visionTool(), table(), media()],
+  plugins: [structureTool(), visionTool(), table(), media(), socialMedia()],
 
   schema: {
     types: schemaTypes,
