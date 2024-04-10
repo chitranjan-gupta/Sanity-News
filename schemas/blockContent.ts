@@ -72,15 +72,6 @@ export default defineType({
       options: {hotspot: true},
     }),
     defineArrayMember({
-      type: 'youtube',
-    }),
-    defineArrayMember({
-      type: 'twitter',
-    }),
-    defineArrayMember({
-      type: 'instagram',
-    }),
-    defineArrayMember({
       type: 'table',
     }),
     defineArrayMember({
